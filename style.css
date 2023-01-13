@@ -1,0 +1,254 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button,
+a,
+input,
+ul,
+ol,
+li {
+  all: unset;
+}
+
+header {
+  background-color: #ffbf69;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  max-width: 1100px;
+  margin: auto;
+  z-index: 100;
+}
+.navbar__logo {
+  text-transform: capitalize;
+}
+.navbar__links {
+  display: flex;
+  gap: 20px;
+}
+
+.main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 120px 50px;
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-size: 920px;
+  background-position: center;
+}
+.main__paragraph {
+  color: white;
+  max-width: 50%;
+}
+.main__paragraph--title {
+  font-size: 8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.main__paragraph--desc {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 120px;
+}
+.main__paragraph--btn {
+  background-color: #cbf3f0;
+  padding: 10px 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.info {
+  max-width: 1100px;
+  margin: 90px auto;
+}
+.info__text {
+  max-width: 800px;
+  margin: auto;
+}
+.info__text--title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.info__text--desc {
+  text-align: center;
+}
+
+.cards {
+  background-color: #cbf3f0;
+  padding: 100px 50px;
+}
+.cards__container {
+  max-width: 1100px;
+  margin: auto;
+}
+.cards__container--title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cards__container--items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.cards__container--items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+.cards__container--items .item__thumbnail--img {
+  max-width: 200px;
+  height: auto;
+}
+.cards__container--items .item__button {
+  background-color: #ffbf69;
+  padding: 10px 20px;
+  font-size: 2rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.prefooter {
+  max-width: 1100px;
+  margin: 100px auto;
+  background-image: url("./images/bg-grid.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.prefooter__paragraph {
+  max-width: 600px;
+}
+.prefooter__paragraph--title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.prefooter__thumbnail--img {
+  max-width: 400px;
+  height: auto;
+}
+
+footer ul {
+  background-color: rgb(59, 57, 57);
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer ul li {
+  padding: 20px;
+  text-align: center;
+  width: 15%;
+  list-style: none;
+}
+
+.content {
+  display: none;
+}
+
+.nav {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+a {
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: rgba(83, 81, 81, 0.718);
+}
+
+li {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+#navmenu {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  transition: all 1s;
+}
+
+#logo {
+  cursor: pointer;
+}
+
+#navmenu li {
+  padding: 15px;
+  font: bolder;
+  transition: all 1s;
+  text-transform: uppercase;
+}
+
+.nascondi {
+  display: none !important;
+}
+
+#exit {
+  cursor: pointer;
+  position: absolute;
+  top: 60px;
+  right: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .cards__container--items {
+    display: flex;
+    flex-direction: column;
+  }
+  .prefooter {
+    margin: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  .prefooter .prefooter__thumbnail--img {
+    margin-top: 30px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .navbar__links, .navbar__logo {
+    display: none;
+  }
+}
+@media screen and (min-width: 420px) {
+  .nav {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
