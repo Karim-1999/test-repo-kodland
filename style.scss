@@ -86,6 +86,7 @@ header {
 
         &--btn {
             @include button(black, #cbf3f0);
+            transition: .3s;
         }
     }
 }
@@ -147,6 +148,23 @@ header {
     }
     
 }
+
+.cards__container--items {
+	.item__button {
+        transition: .3s ;
+		&:hover {
+			background-color: #c88b3b;
+			transform: scale(1.2);
+		}
+	}
+}
+button {
+	&:hover {
+		background-color: #65d2cb;
+		transform: scale(1.2);
+	}
+}
+
 
 .prefooter {
     max-width: 1100px;

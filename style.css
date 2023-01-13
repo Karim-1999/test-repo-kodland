@@ -66,6 +66,7 @@ header {
   text-transform: capitalize;
   color: black;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.3s;
 }
 
 .info {
@@ -123,6 +124,19 @@ header {
   text-transform: capitalize;
   color: black;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cards__container--items .item__button {
+  transition: 0.3s;
+}
+.cards__container--items .item__button:hover {
+  background-color: #c88b3b;
+  transform: scale(1.2);
+}
+
+button:hover {
+  background-color: #65d2cb;
+  transform: scale(1.2);
 }
 
 .prefooter {
